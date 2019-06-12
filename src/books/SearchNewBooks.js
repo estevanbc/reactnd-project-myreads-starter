@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Book from './Book'
 import * as BooksAPI from '../BooksAPI'
 import PropTypes from 'prop-types'
+import { DebounceInput } from 'react-debounce-input'
 
 class SearchNewBooks extends Component {
   static propTypes = {
@@ -50,8 +51,10 @@ class SearchNewBooks extends Component {
             </button>
           </Link>
           <div className="search-books-input-wrapper">            
-            <input type="text"
+            <DebounceInput
               placeholder="Search by title or author"
+              minLength={2}
+              debounceTimeout={300}
               value={query}
               onChange={(event) => this.updateQuery(event.target.value)}
             />
