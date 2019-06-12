@@ -1,6 +1,8 @@
 # MyReads Project
 
-This project was based at the [starter template](https://github.com/udacity/reactnd-project-myreads-starter) for the final assessment project for Udacity's React Fundamentals course. The job was to add interactivity to the app by refactoring the static code in this template.
+MyReads is an application made with React to manage books and archive them. I can search for new books and choose if I want to read, I'm reading or I've read.
+
+*This project was based at the [starter template](https://github.com/udacity/reactnd-project-myreads-starter) for the final assessment project for Udacity's React Fundamentals course. The job was to add interactivity to the app by refactoring the static code in this template.*
 
 ## Project Setup
 
